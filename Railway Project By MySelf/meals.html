@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #242424;
+            color: #e0e0e0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #181818;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 60%;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-left: 25px;
+        }
+
+        .navbar a {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ffcc00;
+            color: #181818;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #fffdfd;
+            padding-top: 70px;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #333;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: calc(33.33% - 50px);
+            overflow: hidden;
+        }
+
+        .card-banner {
+            position: relative;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        .category-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 5px;
+        }
+
+        .blog-hashtag {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .blog-title {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #28a745;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .blog-title:hover {
+            background-color: #218838;
+            cursor: pointer;
+        }
+
+        .card-profile {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Logo.webp" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Trains.html">Trains</a></li>
+                <li><a href="Holiday.html">Holiday</a></li>
+                <li><a href="meals.html">Meals</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="heading">Meals</div>
+
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag popular">Pizza</p>
+                <img class="banner-img" src="Pizza.jpg" alt="Pizza Image">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#Food #Pizza</p>
+                <h2 class="blog-title">Veg Pizza - &#8360;350</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag technology">Sandwich</p>
+                <img class="banner-img" src="sanwich.jpg" alt="Sandwich Image">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#Sandwich</p>
+                <h2 class="blog-title">Sandwich - &#8360;70</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag psychology">Burger</p>
+                <img class="banner-img" src="Burger.webp" alt="Burger Image">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#Burger</p>
+                <h2 class="blog-title">Burger - &#8360;50</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag technology">Thali</p>
+                <img class="banner-img" src="Vegthali.jpg" alt="Thali Image">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#VegThali #NonVegThali</p>
+                <h2 class="blog-title">Veg Thali - &#8360;100</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag psychology">Biryani</p>
+                <img class="banner-img" src="Biryani.jpg" alt="Biryani Image">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#Biryani</p>
+                <h2 class="blog-title">Veg Biryani - &#8360;100</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

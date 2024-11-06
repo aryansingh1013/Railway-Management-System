@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Packages</title>
+    <style>
+    body {
+    background-color: black;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color:#181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius:60%;
+    overflow:hidden;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color:#ffcc00;
+    color: #181818;
+}
+
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.holiday {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Logo.webp" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Trains.html">Trains</a></li>
+                <li><a href="Holiday.html">Holiday</a></li>
+                <li><a href="meals.html">Meals</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h3 class="title">Holiday Packages</h3>
+        <div class="holiday">
+            <div class="item">
+                <img src="Tourist.jpg" class="image" alt="Tourist Trains" width="500px">
+                <h4><a href="Tourist.html" style="color: white;">Tourist Trains</a></h4>
+                <ul>
+                    <li>Manali</li>
+                    <li>Shimla</li>
+                    <li>Jammu</li>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="international.jpg" class="image" alt="International Packages" width="500px">
+                <h4><a href="international.html" style="color: white;">Interational Trains</a></h4>
+                <ul>
+                    <li>Nepal</li>
+                    <li>Dubai</li>
+                    <li>Bangladesh</li>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="national.jpg" class="image" alt="National Packages" width="500px">
+                <h4><a href="National.html" style="color: white;">National Trains</a></h4>
+                <ul>
+                    <li>Agra</li>
+                    <li>Manali</li>
+                    <li>Goa</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
